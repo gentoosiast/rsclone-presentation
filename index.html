@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentation: Durak Card Game</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-image="/title-bg.webp">
+          <img
+            src="/durak-logo-text.webp"
+            alt="Durak logo"
+            width="440"
+            height="152"
+          />
+        </section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #002b36 0 75%, #005266 100%)"
+        >
+          <h1>our team</h1>
+          <div class="people">
+            <div class="person">
+              <p class="gh-account">
+                <img src="/ghicon-male.png" alt="github logo" /><span
+                  >shopot</span
+                >
+              </p>
+              <ul class="person-description">
+                <li>team lead</li>
+                <li>experienced backend engineer</li>
+                <li>devops master</li>
+              </ul>
+            </div>
+            <div class="person">
+              <p class="gh-account">
+                <img src="/ghicon-female.png" alt="github logo" /><span
+                  >sinastya</span
+                >
+              </p>
+              <ul class="person-description">
+                <li>game designer</li>
+                <li>bug hunter</li>
+                <li>best teammate on Earth</li>
+              </ul>
+            </div>
+            <div class="person">
+              <p class="gh-account">
+                <img src="/ghicon-male.png" alt="github logo" /><span
+                  >gentoosiast</span
+                >
+              </p>
+              <ul class="person-description">
+                <li>public representative</li>
+                <li>jack of all trades</li>
+                <li>working horse</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #002b36 0 75%, #005266 100%)"
+        >
+          <h1>Yandex version / Our version</h1>
+          <div class="ComparisonSlider">
+            <div
+              class="ComparisonSlider__Before"
+              style="background-image: url(/comparison1.webp)"
+            ></div>
+            <div
+              class="ComparisonSlider__After"
+              style="background-image: url(/comparison-2.png)"
+            ></div>
+          </div>
+        </section>
+        <section>
+          <h1><span class="uppercase">RACI</span> Matrix</h1>
+          <table class="raci-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>shopot</th>
+                <th>sinastya</th>
+                <th>gentoosiast</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>client (Phaser)</td>
+                <td>I</td>
+                <td>RA</td>
+                <td>I</td>
+              </tr>
+              <tr>
+                <td>game logic</td>
+                <td>C</td>
+                <td>I</td>
+                <td>R</td>
+              </tr>
+              <tr>
+                <td>design</td>
+                <td>R</td>
+                <td>I</td>
+                <td>I</td>
+              </tr>
+              <tr>
+                <td>backend (Nest.js)</td>
+                <td>R</td>
+                <td>I</td>
+                <td>I</td>
+              </tr>
+              <tr>
+                <td>frontend (React)</td>
+                <td>C</td>
+                <td>I</td>
+                <td>R</td>
+              </tr>
+              <tr>
+                <td>bug hunting</td>
+                <td>I</td>
+                <td>R</td>
+                <td>I</td>
+              </tr>
+              <tr>
+                <td>bugfixes</td>
+                <td>C</td>
+                <td>I</td>
+                <td>R</td>
+              </tr>
+              <tr>
+                <td>deployment</td>
+                <td>R</td>
+                <td>I</td>
+                <td>I</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <section>
+            <h1>tech stack</h1>
+          </section>
+          <section>
+            <h1><span class="capitalize">Nest</span>.js</h1>
+            <div class="pros-cons-lists">
+              <ul class="pros-list">
+                <li>good modular architecture out of the box</li>
+                <li>dependency injection pattern (inspired by Angular)</li>
+                <li>first-class TypeScript support</li>
+                <li>
+                  dozens of built-in modules that help you easily integrate with
+                  common technologies and concepts
+                </li>
+              </ul>
+              <ul class="cons-list">
+                <li>higher learning curve in comparison to Express</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h1>
+              <span class="capitalize">Socket</span>.<span class="uppercase"
+                >IO</span
+              >
+            </h1>
+            <div class="pros-cons-lists">
+              <ul class="pros-list">
+                <li>disconnect detection and automatic reconnect</li>
+                <li>rooms support out of the box</li>
+                <li>first class support of TypeScript</li>
+                <li>very good official documentation</li>
+              </ul>
+              <ul class="cons-list">
+                <li>none (for our use case)</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
