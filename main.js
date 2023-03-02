@@ -5,7 +5,10 @@ import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/moon.css";
 import Reveal from "reveal.js";
 import ComparisonSlider from "comparison-slider";
+import RevealNotes from "reveal.js/plugin/notes/notes";
 
 const deck = new Reveal();
-deck.initialize({ hash: true, slideNumber: true });
+deck.initialize({ hash: true, slideNumber: true
+  , plugins: [ RevealNotes ] 
+});
 const comparisonSlider = new ComparisonSlider();
