@@ -135,6 +135,10 @@ button:focus-visible {
   font-size: 24px;
 }
 
+.raci-table td {
+  text-align: center !important;
+}
+
 .pros-cons-lists {
   display: flex;
   font-size: 24px;
