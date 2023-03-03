@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presentation: Durak Card Game</title>
   </head>
@@ -64,17 +68,11 @@
         <section
           data-background-gradient="linear-gradient(to bottom, #002b36 0 75%, #005266 100%)"
         >
-          <h1>Yandex version / Our version</h1>
-          <div class="ComparisonSlider">
-            <div
-              class="ComparisonSlider__Before"
-              style="background-image: url(/comparison1.webp)"
-            ></div>
-            <div
-              class="ComparisonSlider__After"
-              style="background-image: url(/comparison-2.png)"
-            ></div>
-          </div>
+          <h1><span class="capitalize">Yandex</span> version / Our version</h1>
+          <img-comparison-slider hover="true">
+            <img slot="first" src="/comparison1.webp" />
+            <img slot="second" src="/comparison2.webp" />
+          </img-comparison-slider>
         </section>
         <section>
           <h1><span class="uppercase">RACI</span> Matrix</h1>
@@ -392,5 +390,9 @@
       </div>
     </div>
     <script type="module" src="/main.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
+    ></script>
   </body>
 </html>

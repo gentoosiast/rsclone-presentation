@@ -123,12 +123,6 @@ button:focus-visible {
   font-size: 18px;
 }
 
-.ComparisonSlider {
-  margin: 0 auto;
-  width: 750px;
-  height: 500px;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
