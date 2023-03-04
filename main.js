@@ -1,5 +1,6 @@
 import Reveal from "reveal.js";
 import RevealNotes from "reveal.js/plugin/notes/notes";
+import RevealZoom from "reveal.js/plugin/zoom/zoom";
 import "reveal.js/dist/reveal.css";
 // see available themes in the
 // node_modules/reveal.js/dist/theme
@@ -8,4 +9,8 @@ import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/moon.css";
 
 const deck = new Reveal();
-deck.initialize({ hash: true, slideNumber: true, plugins: [RevealNotes] });
+deck.initialize({
+  hash: true,
+  slideNumber: true,
+  plugins: [RevealNotes, RevealZoom],
+});
