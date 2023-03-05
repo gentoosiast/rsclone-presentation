@@ -156,3 +156,10 @@ button:focus-visible {
 .cons-list {
   color: #fb7185;
 }
+
+.code-line {
+  padding: 5px 10px;
+  font-family: monospace;
+  font-size: 20px;
+  background-color: rgba(255 255 255 / 0.2);
+}
